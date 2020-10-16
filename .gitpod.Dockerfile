@@ -39,7 +39,10 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
        libicu-dev \
        parallel \
        postgresql-client-$POSTGRES_CLIENT \
+<<<<<<< HEAD
        postgresql-$POSTGRES_CLIENT \
+=======
+>>>>>>> 7d4aa33c26a7f5e70c6f03693ccf62879d8a76ee
        unzip \
        pbzip2 \
        fontforge \
@@ -124,4 +127,5 @@ RUN yarn postinstall
 COPY --chown=docker:docker . ${APP_HOME}
 
 ARG JS_BUILD_NO_UGLIFY=0
+
 # RUN COMPILE_ASSETS_NPM_INSTALL=0 JS_BUILD_NO_UGLIFY="$JS_BUILD_NO_UGLIFY" bundle exec rails canvas:compile_assets
