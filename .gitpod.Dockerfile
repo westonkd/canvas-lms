@@ -125,4 +125,6 @@ COPY --chown=docker:docker . ${APP_HOME}
 
 ARG JS_BUILD_NO_UGLIFY=0
 
+RUN service postgresql start
+
 # RUN COMPILE_ASSETS_NPM_INSTALL=0 JS_BUILD_NO_UGLIFY="$JS_BUILD_NO_UGLIFY" bundle exec rails canvas:compile_assets
