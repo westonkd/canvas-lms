@@ -39,10 +39,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
        libicu-dev \
        parallel \
        postgresql-client-$POSTGRES_CLIENT \
-<<<<<<< HEAD
        postgresql-$POSTGRES_CLIENT \
-=======
->>>>>>> 7d4aa33c26a7f5e70c6f03693ccf62879d8a76ee
        unzip \
        pbzip2 \
        fontforge \
